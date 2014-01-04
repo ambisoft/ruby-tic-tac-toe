@@ -30,9 +30,10 @@ class TicTacToe
     else
       array = []
       array << x << y
-      @plays[@current_player] << array
-      @current_player = (@current_player == 'X') ? 'O' : 'X'      
+      @plays[@current_player] << array      
+      @current_player = (@current_player == 'X') ? 'O' : 'X'            
     end
+    
   end
   
   def winner?
