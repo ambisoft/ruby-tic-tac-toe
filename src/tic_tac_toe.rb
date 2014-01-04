@@ -21,9 +21,7 @@ class TicTacToe
     if winner?
       puts "#{@current_player} wins!"
     else
-      array = []
-      array << x << y
-      @plays[@current_player] << array      
+      @plays[@current_player] << [x, y]      
       @current_player = (@current_player == 'X') ? 'O' : 'X'            
     end
     
